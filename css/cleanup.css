@@ -1,1 +1,37 @@
 /* write your override styles here */
+/* Clean up graffiti tags by overriding existing styles */
+
+/* Tag 1 - More specific selector to override .tag-1 */
+#wall .tag-1 {
+  display: none;
+}
+
+/* Tag 2 - Using multiple classes for higher specificity */
+#wall .tag-1 + #tag-2 {
+  display: none;
+}
+
+/* Tag 3 - Using parent-child relationship */
+div#wall #tag-3.slick {
+  display: none;
+}
+
+/* Tag 4 - Multiple selectors for specificity */
+#wall .parent #tag-4 {
+  display: none;
+}
+
+/* Tag 5 - Using direct descendant selector */
+div#wall div.parent #tag-5.slick {
+  display: none;
+}
+
+/* Tag 6 - Targeting with multiple relationships */
+body div#wall div.parent div:last-child div#tag-6 {
+  display: none;
+}
+
+/* Tag 7 - Complex selector for highest specificity */
+body div#wall div.parent div:first-child > #tag-7.slick {
+  display: none;
+}
